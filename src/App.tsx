@@ -3,9 +3,9 @@ import { ConfigProvider, Layout, Menu } from 'antd';
 import zhCN from 'antd/locale/zh_CN';
 import { routes } from './router/routes';
 
-function App() {
-  const { Header, Content } = Layout;
+const { Header, Content } = Layout;
 
+function App() {
   const menuItems = routes.map(({ path, title }) => ({
     key: path,
     label: <Link to={path}>{title}</Link>,
